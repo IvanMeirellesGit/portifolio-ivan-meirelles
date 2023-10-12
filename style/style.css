@@ -4,6 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --main-bg-color: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    --destaque-bg-color: #161616;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +18,7 @@
 .caixa-principal {
     height: 100%;
     width: 100%;
-    background: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    background: var(--main-bg-color);
 }
 
 nav {
@@ -60,7 +65,8 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 35px 0px;
+    padding-top: 35px;
+    padding-bottom: 35px;
  }
 
 
@@ -96,6 +102,7 @@ article{
     flex-direction: column;
     justify-content: space-between;
     max-width: 450px;
+    padding-bottom: 70px;
 }
 
 article h3{
@@ -164,16 +171,20 @@ article p {
 }
 .box-habilidades{
     flex-direction: column;    
-    background-color: #161616;
+    background-color: var(--destaque-bg-color);
+}
+.habilidades {
+    padding-bottom: 10px;
 }
 .img-hab{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 
 }
 .img-hab img{   
     align-items: center;
-    padding: 85px 0px;
+    padding: 30px 0px;
     width: 80px;
     margin-left: 25px;
 }
