@@ -163,7 +163,19 @@ article p {
     margin-top: -15px;
 }
 .box-habilidades{
+    flex-direction: column;    
     background-color: #161616;
+}
+.img-hab{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.img-hab img{   
+    align-items: center;
+    padding: 85px 0px;
+    width: 80px;
+    margin-left: 25px;
 }
 
 .box-projeto {
