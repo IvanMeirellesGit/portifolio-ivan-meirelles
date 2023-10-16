@@ -5,8 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --main-bg-color: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
-    --destaque-bg-color: #161616;
+    --bg-primary: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    --bg-secondary: #161616; 
+    --font-color-primary: #E0E0E0;
+    --font-color-secondary: #70FF00;
+    --font-color-tertiary: #828282;
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Courier Prime',sans-serif;
+    --font-family-tertiary: 'Roboto Mono', sans-serif;
+
 }
 
 *{
@@ -18,7 +25,7 @@
 .caixa-principal {
     height: 100%;
     width: 100%;
-    background: var(--main-bg-color);
+    background: var(--bg-primary);
 }
 
 nav {
@@ -31,7 +38,7 @@ padding-right: 30px;
 }
 
 .portifolio {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 1.8em;
     font-weight: 500;
 }
@@ -41,7 +48,7 @@ padding-right: 30px;
 
  .portifolio a{
     text-decoration: none;
-    color: #f2f2f2;
+    color: var(--font-color-primary);
  }
 
 li {
@@ -50,14 +57,14 @@ li {
 }
 
 li a{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 1em;
     font-weight: 500;
     text-decoration: none;
-    color: #f2f2f2;
+    color: var(--font-color-primary);
 }
 li a:hover{
-    color: #70FF00;
+    color: var(--font-color-secondary);
     transition: 0.8s;
 }
 
@@ -69,15 +76,22 @@ section {
     padding-bottom: 35px;
  }
 
+ .avatar-img {
+    position: relative;
+ }
 
-
-.avatar-img img{
+.avatar img{   
+    position: absolute;
+    width: 350px;
+    height: auto;
+}
+.background img{  
     width: 350px;
     height: auto;
 }
 
 .meu-nome p {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 1.2em;
     line-height: 50px;
     color: #f2f2f2;
@@ -85,14 +99,14 @@ section {
  }
 
 .meu-nome h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 2.2em;
     font-weight: 700;
-    color: #f2f2f2;
+    color: var(--font-color-primary);
  }
 .meu-nome h2 {
-    font-family: 'Roboto Mono', sans-serif;
-    color: #70FF00;
+    font-family: var(--font-family-tertiary);
+    color: var(--font-color-secondary);
     font-size: 2em;
     font-weight: 700;    
  }
@@ -106,16 +120,16 @@ article{
 }
 
 article h3{
-    color:#70FF00;
-    font-family: Roboto;
+    color: var(--font-color-secondary);
+    font-family: var(--font-family-primary);
     font-size: 2em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
  }
 article span{
-    color: #E0E0E0;
-    font-family: Roboto;
+    color: var(--font-color-primary);
+    font-family: var(--font-family-primary);
     font-size: 1em;
     font-style: normal;
     font-weight: 700;
@@ -123,8 +137,8 @@ article span{
  }
 
 article p {
-    color:#F2F2F2;
-    font-family: Roboto;
+    color: var(--font-color-primary);
+    font-family: var(--font-family-primary);
     font-size: 1em;
     font-style: normal;
     font-weight: 400;
@@ -145,8 +159,8 @@ article p {
     box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.29);
  }
  .card-retangulo h3{
-    color: #fff;
-    font-family: 'Courier Prime';
+    color: var(--font-color-primary);
+    font-family: var(--font-family-secondary);
     font-size: 1.2em;
     font-weight: 500;  
     margin-top: 10px;  
@@ -154,8 +168,8 @@ article p {
  }
 
  .card-retangulo a {
-    font-family: 'Courier Prime',sans-serif;
-    color: #70FF00;
+    font-family: var(--font-family-secondary);
+    color: var(--font-color-secondary);
     font-size: 0.8em;
     font-weight: 400;
     text-decoration: underline;
@@ -171,7 +185,7 @@ article p {
 }
 .box-habilidades{
     flex-direction: column;    
-    background-color: var(--destaque-bg-color);
+    background-color: var(--bg-secondary);
 }
 .habilidades {
     padding-bottom: 10px;
