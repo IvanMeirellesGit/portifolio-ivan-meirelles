@@ -228,25 +228,3 @@ article p {
     width: 80px;
     margin-left: 25px;
 }
-
-.projetos-centralizado{
-    display: flex;
-    flex-direction: column;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-bottom: 50px;
-}
-
-.projetos-direita {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 470px;
-    height: 240px;
-}
-
-.projetos-esquerda {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
