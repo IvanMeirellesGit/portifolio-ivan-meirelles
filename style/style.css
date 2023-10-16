@@ -188,9 +188,3 @@ article p {
     width: 80px;
     margin-left: 25px;
 }
-
-.box-projeto {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 35px;
-}
