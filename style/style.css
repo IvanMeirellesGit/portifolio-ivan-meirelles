@@ -22,19 +22,53 @@
     box-sizing: border-box;
 }
 
-.caixa-principal {
+main {
     height: 100%;
     width: 100%;
     background: var(--bg-primary);
 }
 
+p {
+    font-family: var(--font-family-primary);
+    font-size: 1.2em;
+    line-height: 50px;
+    color: #f2f2f2;
+    font-weight: 400;
+}
+h1{
+    font-family: var(--font-family-primary);
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--font-color-primary);
+}
+h2{
+    font-family: var(--font-family-tertiary);
+    color: var(--font-color-secondary);
+    font-size: 2em;
+    font-weight: 700; 
+}
+h3{
+    color: var(--font-color-secondary);
+    font-family: var(--font-family-primary);
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+span{
+    color: var(--font-color-primary);
+    font-family: var(--font-family-primary);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 nav {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-top: 15px;
-padding-left: 30px;
-padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 15px 15px 15px;
 }
 
 .portifolio {
@@ -72,8 +106,12 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+ }
+
+ .caixa-principal {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
  }
 
  .avatar-img {
@@ -82,33 +120,27 @@ section {
 
 .avatar img{   
     position: absolute;
-    width: 350px;
+    width: 300px;
     height: auto;
 }
 .background img{  
-    width: 350px;
+    width: 300px;
     height: auto;
+    border-radius: 35%;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.38);
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
 }
 
-.meu-nome p {
+ .subtitle p{
     font-family: var(--font-family-primary);
-    font-size: 1.2em;
-    line-height: 50px;
-    color: #f2f2f2;
-    font-weight: 400;
- }
-
-.meu-nome h1 {
-    font-family: var(--font-family-primary);
-    font-size: 2.2em;
-    font-weight: 700;
-    color: var(--font-color-primary);
- }
-.meu-nome h2 {
-    font-family: var(--font-family-tertiary);
-    color: var(--font-color-secondary);
     font-size: 2em;
-    font-weight: 700;    
+    font-weight: 500;
+    color: var(--font-color-primary);
+    margin-top: 20px;
  }
  
 article{
@@ -116,25 +148,7 @@ article{
     flex-direction: column;
     justify-content: space-between;
     max-width: 450px;
-    padding-bottom: 70px;
 }
-
-article h3{
-    color: var(--font-color-secondary);
-    font-family: var(--font-family-primary);
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
- }
-article span{
-    color: var(--font-color-primary);
-    font-family: var(--font-family-primary);
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
- }
 
 article p {
     color: var(--font-color-primary);
@@ -145,6 +159,13 @@ article p {
     line-height: normal;
     padding-top: 10px;
  }
+
+ .sobremim {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+ }
+
  .box-retangulo {
     display: flex;
     flex-direction: column;
@@ -156,7 +177,7 @@ article p {
     background-color: #4F4F4F;
     border-radius: 6px;
     margin-top: 5px;
-    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.38);
  }
  .card-retangulo h3{
     color: var(--font-color-primary);
@@ -184,9 +205,14 @@ article p {
     margin-top: -15px;
 }
 .box-habilidades{
-    flex-direction: column;    
+    flex-direction: column;  
+  
     background-color: var(--bg-secondary);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 .habilidades {
     padding-bottom: 10px;
 }
@@ -201,4 +227,26 @@ article p {
     padding: 30px 0px;
     width: 80px;
     margin-left: 25px;
+}
+
+.projetos-centralizado{
+    display: flex;
+    flex-direction: column;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 50px;
+}
+
+.projetos-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 470px;
+    height: 240px;
+}
+
+.projetos-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
