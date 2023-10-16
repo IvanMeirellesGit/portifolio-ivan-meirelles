@@ -101,7 +101,11 @@ li a:hover{
     color: var(--font-color-secondary);
     transition: 0.8s;
 }
-
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 section {
     display: flex;
     justify-content: space-around;
